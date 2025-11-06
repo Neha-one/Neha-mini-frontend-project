@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Playwrite+AU+QLD:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fullbodycolor: #b9a5b9;
+    --pricolor: #800080;
+    --seccolor: #ac52ac;
+    --tricolor: #c189c1;
+    --textcolor: rgb(0, 18, 119);
+}
+
+body {
+    background-color: #c4c4c4;
+    font-family: "Poppins", sans-serif;
+}
+
+.boxes {
+    background-color: var(--fullbodycolor);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.boxes {
+    border: 2px solid black;
+    /* border-radius: 34px; */
+    width: 888px;
+    height: 999px;
+}
+
+.box1 {
+    border: 2px solid black;
+    /* border-radius: 34px; */
+    width: 887px;
+    height: 44px;
+    margin: 0;
+    padding: 5px;
+    word-spacing: 33px;
+    text-align: left;
+    background-color: var(--seccolor);
+    position: sticky;
+    top: 0;
+}
+
+.box2 {
+    border: 2px solid black;
+    width: 870px;
+    height: 400px;
+    margin: 8px;
+    background-color: var(--tricolor);
+}
+
+.box3 {
+    border: 2px solid black;
+    width: 300px;
+    height: 344px;
+    display: inline;
+    float: left;
+    margin-top: 23px;
+    margin-left: 77px;
+    overflow: hidden;
+
+}
+
+.box4 {
+    border: 2px solid black;
+    width: 300px;
+    height: 344px;
+    float: right;
+    margin-top: 23px;
+    margin-right: 77px;
+    overflow: hidden;
+}
+
+.box3 img,
+.box4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ul li {
+    display: inline;
+    font-weight: bold;
+    padding: 12px;
+}
+
+ul li a {
+    color: var(--textcolor);
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: var(--tricolor);
+    color: rgb(130, 68, 101);
+}
+
+h3 {
+    display: inline;
+    font-weight: bolder;
+    /* font-style: italic; */
+    color: rgb(64, 64, 162);
+    padding-left: 22px;
+}
+
+.box5,
+.box6,
+.box8,
+.box9 {
+    display: inline-block;
+    margin: 15px 30px 0px 10px;
+    padding: 8px;
+    border: 2px solid var(--seccolor);
+    font-size: small;
+    font-weight: 666;
+    border-radius: 23px;
+    --tricolors: #d86bd8;
+    color: rgb(17, 17, 132);
+    background-color: var(--tricolors);
+    box-shadow: inset 11px 11px 11px var(--tricolor);
+}
+
+.box5:hover,
+.box6:hover,
+.box8:hover,
+.box9:hover {
+    background-color: var(--seccolor);
+    color: rgb(205, 201, 201);
+    transform: scale(1.05);
+}
+
+.box5:active,
+.box6:active,
+.box8:active,
+.box9:active {
+    background-color: #800080;
+}
+
+.box7 {
+    display: block;
+    /* takes full row, so it can be centered */
+    width: fit-content;
+    /* shrinks to its text size */
+    margin: 23px auto;
+    /* auto left+right margin = center */
+    border: 2px solid var(--pricolor);
+    width: fit-content;
+    text-align: center;
+    padding: 12px 18px;
+    border-radius: 23px;
+    background-color: var(--tricolor);
+    color: var(--textcolor);
+    font-weight: bold;
+}
+
+.box7:hover {
+    background-color: var(--pricolor);
+    color: rgb(205, 201, 201);
+    transform: scale(1.08);
+}
+
+.boxes {
+    position: relative;
+}
+
+.box10 {
+    float: right;
+    position: fixed;
+    bottom: 20px;
+    /* margin-right: 20px; */
+}
+
+p {
+    margin: 23px 23px 0px 23px;
+    font-weight: 444;
+    color: #4b0082;
+    word-spacing: 3px;
+}
