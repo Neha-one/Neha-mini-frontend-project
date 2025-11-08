@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+}
+
+.box {
+    background-color: black;
+    height: 70vh;
+    width: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+}
+
+.navbar {
+    height: 55px;
+    max-width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.mainspan {
+    height: calc(100% - 55px);
+    color: white;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    
+}
+
+.separationborder {
+    background-color: rgb(255, 0, 0);
+    height: 11px;
+}
