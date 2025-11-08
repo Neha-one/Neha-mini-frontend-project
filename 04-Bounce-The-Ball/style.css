@@ -1,0 +1,137 @@
+.container {
+    border: 9px solid saddlebrown;
+    background-color: rgb(47, 78, 67);
+    height: 500px;
+    width: 1000px;
+    box-sizing: border-box;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+
+    /* IT WILL JUST BOUNCE THE BALL ONE TIME. BUT IT IS MY OWN TRY AT ONE TIME. */
+    /* animation: ScienceAnimationY 1s linear 2s infinite alternate,
+                ScienceAnimationX 1s linear 2s infinite alternate; */
+}
+
+.box {
+    animation: ball 5s linear infinite alternate;
+
+}
+
+/* @keyframes ScienceAnimationY {
+            from {
+                transform: translate(0,0);
+            }
+
+            to {
+                transform: translateY(-1000%);
+            }
+        }
+
+        @keyframes ScienceAnimationX {
+            from {}
+
+            to {
+                transform: translateX(300%);
+            }
+        } */
+/* AFTER APPLYING IN VW AND VH SO IT IS ALSO MOVE OUTSIDE TO THE CONTAINER IT MEANS IT WILL MOVE ACROSS THE VIEWPORT MEANS TOTAL AREA OF SCREEN. */
+
+/* @keyframes ball {
+            0% {
+                transform: translate(0);
+                background-color: rgb(255, 255, 255);
+            }
+
+            20% {
+                transform: translateX(15vw) translateY(-40vh);
+                background-color: rgb(183, 146, 146);
+            }
+
+            40% {
+                transform: translateX(30vw) translateY(0vh);
+                background-color: rgb(170, 114, 114);
+            }
+
+            60% {
+                transform: translateX(45vw) translateY(-40vh);
+                background-color: rgb(145, 72, 72);
+
+            }
+
+            80% {
+                transform: translateX(60vw) translateY(0vh);
+                background-color: rgb(128, 44, 44);
+
+            }
+
+            100% {
+                transform: translateX(75vw) translateY(-40vh);
+                background-color: rgb(102, 17, 17);
+
+            }
+        } */
+/* AFTER APPLYING IN PX OR % AFTER ADDING POSITION RELATIVE IN CONTAINER SO IT IS JUST MOVE INSIDE THE CONTAINER. */
+@keyframes ball {
+    0% {
+        transform: translate(0, 0);
+        /* bottom-left */
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
+
+
+    }
+
+    20% {
+        transform: translate(150px, -200px);
+        /* jump up */
+        background-color: rgb(183, 146, 146);
+        box-shadow: 0 10px 20px rgba(183, 146, 146, 0.4);
+
+
+    }
+
+    40% {
+        transform: translate(300px, 0);
+        /* land */
+        background-color: rgb(170, 114, 114);
+        box-shadow: 0 10px 20px rgba(170, 114, 114, 0.4);
+
+    }
+
+    60% {
+        transform: translate(450px, -200px);
+        /* jump again */
+        background-color: rgb(145, 72, 72);
+        box-shadow: 0 10px 20px rgba(145, 72, 72, 0.4);
+
+
+    }
+
+    80% {
+        transform: translate(600px, 0);
+        /* land */
+        background-color: rgb(128, 44, 44);
+        box-shadow: 0 10px 20px rgba(128, 44, 44, 0.4);
+
+
+    }
+
+    100% {
+        transform: translate(750px, -200px);
+        /* jump right-up */
+        background-color: rgb(102, 17, 17);
+        box-shadow: 0 10px 20px rgba(102, 17, 17, 1);
+
+
+    }
+}

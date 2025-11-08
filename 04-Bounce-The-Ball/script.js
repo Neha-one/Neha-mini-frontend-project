@@ -1,0 +1,1 @@
+alert("welcome to this mini project!")
