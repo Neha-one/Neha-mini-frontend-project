@@ -1,0 +1,11 @@
+h1 {
+    color: deeppink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+
+body {
+    background-color: antiquewhite;
+}
