@@ -1,0 +1,11 @@
+#clockcontainer {
+    height: 40vh;
+    width: 40vw;
+    border: 2px solid black;
+    margin: auto;
+    background: url("black clock.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
