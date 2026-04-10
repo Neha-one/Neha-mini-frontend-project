@@ -18,8 +18,11 @@ import { employees } from './models/data.js'
 import { random } from './models/callingFun.js'
 import { RandomBool } from './models/callingFun.js'
 import { Name, City, Language } from './models/callingFun.js'
-
-const conn = mongoose.connect("mongodb://localhost:27017/company")
+import "dotenv/config";
+const URL=process.env.MONGO_URL 
+const conn = ()=>{
+    mongoose.connect(`${URL}/company` )
+}
 const app = express()
 const port = 3000;
 
@@ -44,5 +47,7 @@ app.get('/', async (req, res) => {
 )
 
 app.listen(port, () => {
+    conn();
+    console.log('connected to db');
     console.log('this server is running on 3000 port');
 })
