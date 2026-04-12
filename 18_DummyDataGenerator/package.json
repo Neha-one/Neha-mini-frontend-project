@@ -6,15 +6,19 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon main.mongodb.js"
+    "start": "nodemon main.mongodb.js",
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/cli": "^4.2.2",
     "dotenv": "^17.4.1",
+    "ejs": "^5.0.2",
     "express": "^5.2.1",
     "mongoose": "^9.4.1",
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.14",
+    "tailwindcss": "^4.2.2"
   }
 }

@@ -1,4 +1,4 @@
-const NameList = "Neha Mani Somya Asami Aryan";
+const NameList = "Neha Mani Somya Nandini Aryan";
 const CityList = "Lucknow Siwan Patna Delhi Noida";
 const LanguageList = "CPP Python Java C JavaScript";
 
