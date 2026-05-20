@@ -1,0 +1,23 @@
+.nameH {
+  font-size: 47px;
+  font-weight: 700;
+  margin: 10px;
+  margin-bottom: 19px;
+}
+
+input {
+  width: 100%;
+}
+.container {
+  text-align: left;
+}
+
+.item-container {
+  margin: 26px;
+}
+.alrow {
+  margin: 20px 5px;
+}
+.albtn {
+  min-width: 99px;
+}
