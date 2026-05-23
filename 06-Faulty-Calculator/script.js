@@ -1,40 +1,26 @@
-/* Create a faulty calculator using JavaScript
+let num1=parseFloat(prompt("enter number 1"));
+let num2=parseFloat(prompt("enter number 2"));
 
-This faulty calculator does following:
-1. It takes two numbers as input from the user
-2. It performs wrong operations as follows:
+let operator=prompt("enter operator (+,-,*,/,**)")
 
-+ ---> -
-* ---> +
-- ---> /
-/ ---> **
-It performs wrong operation 10% of the times.
-*/
-
-let num1 = parseFloat(prompt("Enter your first number:"));
-let num2 = parseFloat(prompt("Enter your second number:"));
-let operator = prompt("Enter operator(+,-,*,/,**):");
-
-let random = Math.random();
+let random=Math.random();
 
 let result;
 
-if (random < 1) {
-    alert("😅 faulty calculation perfomed!");
-    if (operator === "+") result = num1 - num2;
-    else if (operator === "*") result = num1 + num2;
-    else if (operator === "-") result = num1 / num2;
-    else if (operator === "/") result = num1 ** num2;
-    else alert("invalid operator!");
-
+if(random<0.5){
+  alert("faulty calculator perform")
+  if(operator==='+') result = num1 - num2;
+  else if(operator==='-') result = num1 / num2;
+  else if(operator==='*') result = num1 + num2;
+  else if(operator==='/') result = num1 ** num2;
+else alert("invalid operator!")
 }
 else {
-    if (operator === "+") result = num1 + num2;
-    else if (operator === "*") result = num1 * num2;
-    else if (operator === "-") result = num1 - num2;
-    else if (operator === "/") result = num1 / num2;
-    else alert("invalid operator!");
+    alert("correct calculator perform")
+  if(operator==='+') result = num1 + num2;
+  else if(operator==='-') result = num1 - num2;
+  else if(operator==='*') result = num1 * num2;
+  else if(operator==='/') result = num1 / num2;
+else alert("invalid operator!")
 }
-
 alert(result);
-
