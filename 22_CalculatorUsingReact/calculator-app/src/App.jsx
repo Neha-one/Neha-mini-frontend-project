@@ -1,12 +1,30 @@
-import styles from './App.module.css';
+import styles from './cssModule/App.module.css';
 import Display from './components/Display';
 import ButtonContainer from './components/ButtonContainer';
+import { useState } from 'react';
 
 function App() {
+
+  const [calValue, setCalVal] = useState("");
+  const addCalVal = (buttonText) => {
+    if (buttonText === 'C') {
+      setCalVal("");
+    }
+    else if (buttonText === '=') {
+      const result = eval(calValue);
+      setCalVal(result);
+    }
+    else {
+
+      let newDisplay = calValue + buttonText;
+      setCalVal(newDisplay);
+    }
+  }
+
   return (
     <div className={styles.container}>
-      <Display />
-      <ButtonContainer />
+      <Display calValue={calValue} />
+      <ButtonContainer handleOnClick={addCalVal} />
     </div>
   )
 }

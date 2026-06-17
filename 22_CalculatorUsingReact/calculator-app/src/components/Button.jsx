@@ -1,8 +1,8 @@
 import styles from '../cssModule/Button.module.css';
-const Button = ({buttonValue}) => {
+const Button = ({ buttonValue, onclick }) => {
   return (
-    <button className={styles.button}>{buttonValue}</button>
+    <button className={styles.button} onClick={onclick}>{buttonValue}</button>
 
   )
 }
-export default Button;
+export default Button;  
