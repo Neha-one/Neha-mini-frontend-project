@@ -11,8 +11,12 @@ function App() {
       setCalVal("");
     }
     else if (buttonText === '=') {
-      const result = eval(calValue);
-      setCalVal(result);
+      try{
+        const result = eval(calValue);
+        setCalVal(result)
+      } catch{
+        setCalVal("Error");
+      }
     }
     else {
 

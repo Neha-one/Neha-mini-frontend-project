@@ -1,8 +1,30 @@
 .button {
   width: 45px;
-  height:45px;
-  margin:5px;
+  height: 45px;
+  margin: 5px;
   font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #5e5252a7;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) ;
+}
 
+.button:hover {
+  transform: scale(1.05);
+}
 
+.clearBtn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.operatorBtn {
+  background-color: #ff9800;
+  color: white;
+}
+
+.eqlBtn {
+  background-color: rgb(140, 140, 250);
 }
