@@ -1,0 +1,9 @@
+.Empytodo {
+  margin: 53px;
+  padding: 33px;
+  border: 6px solid rgb(251, 146, 255);
+  background-color: rgb(246, 186, 248);
+  border-radius: 11px;
+  text-shadow: 2px 2px 13px rgb(238, 16, 246);
+  font-family: "Bitcount Prop Single", system-ui;
+}
