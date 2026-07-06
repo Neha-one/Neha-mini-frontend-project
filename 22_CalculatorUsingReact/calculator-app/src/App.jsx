@@ -6,6 +6,7 @@ import { useState } from 'react';
 function App() {
 
   const [calValue, setCalVal] = useState("");
+  
   const addCalVal = (buttonText) => {
     if (buttonText === 'C') {
       setCalVal("");

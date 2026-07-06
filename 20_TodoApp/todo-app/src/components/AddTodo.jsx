@@ -33,8 +33,8 @@ function AddTodo({ handleNewItem }) {
           <input type="date" value={itemDate} onChange={handleDateChange} />
         </div>
         <div className="col-2">
-          <button type="button" className="btn albtn btn-success "onClick={handleAddBtn}>
-            <VscAdd className={styleCSS.btnstyle}/>
+          <button type="button" className="btn albtn btn-success " onClick={handleAddBtn}>
+            <VscAdd className={styleCSS.btnstyle} />
           </button>
         </div>
       </div>
